@@ -1,5 +1,5 @@
 pipeline {
-agent any {
+agent any
      stages {
              stage ('build') {
                         steps {
@@ -12,7 +12,6 @@ agent any {
                              echo 'deploy....'
                              sleep 50
                              }
-                             }
-                       }
+                            }
                      }
                    }
