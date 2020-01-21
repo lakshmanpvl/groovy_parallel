@@ -1,7 +1,7 @@
 pipeline {
 agent any
      stages {
-          parallel {
+          parallel (
                stage ('build') {
                         steps {
                             echo 'building.....'
@@ -14,6 +14,6 @@ agent any
                              sleep 50
                              }
                             }
-                     }
+                     )
                    }
                  }
