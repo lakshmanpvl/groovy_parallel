@@ -8,7 +8,7 @@ agent any
           parallel {
                stage ('build') {
                         steps {
-                             input {'press yes to continue'}
+                             input {`press yes to continue`}
                             echo 'building.....'
                             sleep 50
                               }
